@@ -11,7 +11,10 @@ CONTINUE_BUTTN = (By.XPATH, "//*[contains(@class, 'login-button w-button')]")
 SETTING_BUTTN = (By.CSS_SELECTOR,"a[href*='/settings']")
 ADD_PROJECT_BUTTN = (By.CSS_SELECTOR, "a[href*='/add-a-project']")
 EMAIL_BUTT = (By.ID, 'Email-add-project')
-PHONE_BUTT = (By.ID,'Phone')
+PHONE_BUTT = (By.ID, 'Phone')
+NAME_BUTTN = (By.ID, 'Your-name')
+COUNTRY_BUTTN = (By.ID, 'Country')
+ROLE_BUTTN = (By.ID, 'Role')
 
 
 @given('Open Reelly main page')
@@ -34,14 +37,12 @@ def enter_pass(context, password):
 
 @when('Click setting butn')
 def click_setting(context):
-    context.driver.find_element(*SETTING_BUTTN).click()
-    sleep(4)
+    context.app.adding_project.click_setting()
 
 
 @when('Click add project butn')
 def click_add_project(context):
-    context.driver.find_element(*ADD_PROJECT_BUTTN).click()
-    sleep(2)
+    context.app.adding_project.click_add_project()
 
 
 @when('Email input {data}')
@@ -52,8 +53,27 @@ def input_email(context, data):
 
 @when('Enter phone{number}')
 def input_number(context, number):
+    context.wait.until(EC.element_to_be_clickable(PHONE_BUTT))
     context.app.send_applic.input_number(number)
-    sleep(4)
+
+
+@when('Enter name{name}')
+def input_name(context, name):
+    context.wait.until(EC.element_to_be_clickable(NAME_BUTTN))
+    context.app.send_applic.input_name(name)
+
+
+@when('Enter country{country}')
+def input_country(context, country):
+    context.wait.until(EC.element_to_be_clickable(COUNTRY_BUTTN))
+    context.app.send_applic.input_country(country)
+
+
+@when('Enter role{role}')
+def input_role(context,role):
+    context.wait.until(EC.element_to_be_clickable(ROLE_BUTTN))
+    context.app.send_applic.input_role(role)
+
 
 
 

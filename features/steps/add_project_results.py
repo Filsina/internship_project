@@ -5,13 +5,13 @@ from time import sleep
 from selenium.webdriver.support.wait import WebDriverWait
 from sample_script import driver
 
-APPLICATION_BUTTN = (By.XPATH,"//input[@type='submit' and @value='Send an application']")
+APPLICATION_BUTTN = (By.XPATH, "//input[@type='submit' and @value='Send an application']")
 
 
-@then('Verify add-a-project page opens')
-def verify_add_project_url(context):
-    assert 'https://soft.reelly.io/add-a-project' in context.driver.current_url
-    print('Correct page opens')
+@then('Verify URL has {word}')
+def verify_partial_url(context, word):
+    context.app.add_project_result_page.verify_partial_url(word)
+    sleep(4)
 
 
 @then('Verify application buttn is available and clickable')
