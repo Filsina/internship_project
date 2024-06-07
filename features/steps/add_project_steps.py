@@ -38,11 +38,13 @@ def enter_pass(context, password):
 @when('Click setting butn')
 def click_setting(context):
     context.app.adding_project.click_setting()
+    sleep(7)
 
 
 @when('Click add project butn')
 def click_add_project(context):
     context.app.adding_project.click_add_project()
+    sleep(7)
 
 
 @when('Email input {data}')
