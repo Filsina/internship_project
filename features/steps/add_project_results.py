@@ -18,6 +18,7 @@ def verify_partial_url(context, word):
 def applictn_send_buttn(context):
     context.wait.until(EC.element_to_be_clickable(APPLICATION_BUTTN))
     context.app.add_project_result_page.applictn_send_buttn()
+    sleep(7)
 
 
 

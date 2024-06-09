@@ -12,6 +12,11 @@ class AddingProject(BasePage):
 
     def click_add_project(self):
         self.wait_until_clickable_click(*self.ADD_PROJECT_BUTTN)
+        #sleep()
+
+
+
+
 
 
 

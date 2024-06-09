@@ -14,7 +14,7 @@ class LogIn(BasePage):
     def enter_pass(self, password):
         self.input_text(password, *self.PASSWORD_INPUT)
         self.click(*self.CONTINUE_BUTTN)
-        sleep(4)
+        #sleep(4)
 
 
 
