@@ -38,21 +38,21 @@ def enter_pass(context, password):
 
 @when('Click setting butn')
 def click_setting(context):
-    #context.app.adding_project.click_setting()
-    sleep(7)
+    context.app.adding_project.click_setting()
+    #sleep(10)
 
 
 @when('Click add project butn')
 def click_add_project(context):
     context.app.adding_project.click_add_project()
-    sleep(7)
+    #sleep(10)
 
 
 @when('Email input {data}')
 def input_email(context, data):
     #context.wait.until(EC.element_to_be_clickable(EMAIL_BUTT))
     context.app.send_applic.input_email(data)
-    sleep(6)
+    sleep(5)
 
 
 @when('Enter phone{number}')
@@ -64,7 +64,7 @@ def input_number(context, number):
 
 @when('Enter name{name}')
 def input_name(context, name):
-    context.wait.until(EC.element_to_be_clickable(NAME_BUTTN))
+    #context.wait.until(EC.element_to_be_clickable(NAME_BUTTN))
     context.app.send_applic.input_name(name)
     sleep(5)
 
@@ -78,9 +78,9 @@ def input_country(context, country):
 
 @when('Enter role{role}')
 def input_role(context,role):
-    #context.wait.until(EC.element_to_be_clickable(ROLE_BUTTN))
+    context.wait.until(EC.element_to_be_clickable(ROLE_BUTTN))
     context.app.send_applic.input_role(role)
-    sleep(5)
+    #sleep(5)
 
 
 
