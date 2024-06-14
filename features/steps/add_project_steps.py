@@ -50,30 +50,30 @@ def click_add_project(context):
 
 @when('Email input {data}')
 def input_email(context, data):
-    #context.wait.until(EC.element_to_be_clickable(EMAIL_BUTT))
+    context.wait.until(EC.element_to_be_clickable(EMAIL_BUTT))
     context.app.send_applic.input_email(data)
-    sleep(5)
+    #sleep(5)
 
 
 @when('Enter phone{number}')
 def input_number(context, number):
-    #context.wait.until(EC.element_to_be_clickable(PHONE_BUTT))
+    context.wait.until(EC.element_to_be_clickable(PHONE_BUTT))
     context.app.send_applic.input_number(number)
-    sleep(5)
+    #sleep(5)
 
 
 @when('Enter name{name}')
 def input_name(context, name):
-    #context.wait.until(EC.element_to_be_clickable(NAME_BUTTN))
+    context.wait.until(EC.element_to_be_clickable(NAME_BUTTN))
     context.app.send_applic.input_name(name)
-    sleep(5)
+    #sleep(5)
 
 
 @when('Enter country{country}')
 def input_country(context, country):
-    #context.wait.until(EC.element_to_be_clickable(COUNTRY_BUTTN))
+    context.wait.until(EC.element_to_be_clickable(COUNTRY_BUTTN))
     context.app.send_applic.input_country(country)
-    sleep(5)
+    #sleep(5)
 
 
 @when('Enter role{role}')
