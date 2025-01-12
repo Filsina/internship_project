@@ -1,9 +1,7 @@
+from time import sleep
+from behave import given, when
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
-from behave import given, when, then
-from time import sleep
-from selenium.webdriver.support.wait import WebDriverWait
-
 
 EMAIL_INPUT = (By.ID, 'email-2')
 PASSWORD_INPUT = (By.ID, 'field')

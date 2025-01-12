@@ -1,10 +1,11 @@
 from pages.main_page import MainPage
 from pages.log_in import LogIn
 from pages.add_project_result_page import AddProjectResultPage
-from time import sleep
-from selenium.webdriver.support import expected_conditions as EC
 from pages.send_applic import SendApplic
 from pages.adding_project import AddingProject
+from pages.market_page import MarketPage
+from pages.market_developer_filter_page import DeveloperPage
+from pages.market_developfilter_licensetags_page import MarketDevelopersPage
 
 
 class Application:
@@ -14,6 +15,10 @@ class Application:
         self.add_project_result_page = AddProjectResultPage(driver)
         self.send_applic = SendApplic(driver)
         self.adding_project = AddingProject(driver)
+        self.market_page = MarketPage(driver)
+        self.market_developer_filter_page = DeveloperPage(driver)
+        self.market_developerfilter_licensetags_page = MarketDevelopersPage(driver)
+
 
 
 
