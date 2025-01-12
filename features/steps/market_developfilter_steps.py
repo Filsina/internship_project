@@ -1,6 +1,4 @@
 from behave import given, when, then
-from selenium.webdriver.common.by import By
-from selenium import webdriver
 
 
 @when('Click on 2 page')

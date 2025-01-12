@@ -17,7 +17,8 @@ class Application:
         self.adding_project = AddingProject(driver)
         self.market_page = MarketPage(driver)
         self.market_developer_filter_page = DeveloperPage(driver)
-        self.market_developerfilter_licensetags_page = MarketDevelopersPage(driver)
+        self.market_developfilter_licensetags_page = MarketDevelopersPage(driver)
+
 
 
 

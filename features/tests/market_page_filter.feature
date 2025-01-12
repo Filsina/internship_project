@@ -1,5 +1,5 @@
 
-Feature: Market page developer filter test
+Feature: Market tab and filter by developers test
 
   Scenario: User can click on 'Developer filer' on market page and see licenses tags
     Given Open Reelly main page
@@ -7,7 +7,7 @@ Feature: Market page developer filter test
     And Enter password Alexey1986!
     And Click on market butn
     Then Verify market page displayed
-    When Click on Developers filter
+    When Click on Developer filter
     Then Verify 16 License tags are shown page1
     When Click on 2 page
     Then Verify 16 License tags are shown page2

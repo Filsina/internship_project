@@ -12,8 +12,7 @@ def market_page_displayed(context):
     context.app.market_page.market_page_displayed()
 
 
-@when('Click on Developers filter')
-def click_developers_filter(context):
-    context.app.market_page.click_developers_filter()
+@when('Click on Developer filter')
+def click_developer_filter(context):
+    context.app.market_page.click_developer_filter()
     sleep(4)
-

@@ -10,5 +10,5 @@ class MarketPage(BasePage):
         self.wait_until_visible(*self.HEADER)
         self.verify_text('Market', *self.HEADER)
 
-    def click_developers_filter(self):
+    def click_developer_filter(self):
         self.wait_until_clickable_click(*self.DEV_FILTER_BUTTN)

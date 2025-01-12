@@ -32,4 +32,4 @@ class BasePage:
         assert expected_text == actual_text, f'Error!{expected_text} not in {actual_text}'
 
     def verify_partial_url(self, expected_url):
-        self.wait.until(EC.url_contains(expected_url), message=f"No {expected_url} in URL")
+        self.wait.until(EC.url_contains(expected_url), message=f"No {expected_url} in url")
