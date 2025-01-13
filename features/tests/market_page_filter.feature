@@ -1,7 +1,6 @@
-
 Feature: Market tab and filter by developers test
 
-  Scenario: User can click on 'Developer filer' on market page and see licenses tags
+  Scenario: User can click on 'Developer filter' on market page and see licenses tags
     Given Open Reelly main page
     When Enter email fgin86@gmail.com
     And Enter password Alexey1986!

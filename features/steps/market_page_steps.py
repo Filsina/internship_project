@@ -2,11 +2,6 @@ from behave import given, when, then
 from time import sleep
 
 
-@when('Click on market butn')
-def click_market_butn(context):
-    context.app.main_page.click_market_butn()
-
-
 @then('Verify market page displayed')
 def market_page_displayed(context):
     context.app.market_page.market_page_displayed()
