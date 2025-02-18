@@ -7,6 +7,7 @@ from pages.market_developer_filter_page import DeveloperPage
 from pages.market_developfilter_licensetags_page import MarketDevelopersPage
 from pages.verification_page import VerificationPage
 from pages.settings_page import SettingPage
+from pages.off_plan_page import OffPlanPage
 
 
 
@@ -21,6 +22,7 @@ class Application:
         self.market_developerfilter_licensetags_page = MarketDevelopersPage(driver)
         self.verification_page = VerificationPage(driver)
         self.settings_page = SettingPage(driver)
+        self.off_plan_page = OffPlanPage(driver)
 
 
 
